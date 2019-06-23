@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins';
+  /* background-color: #2C2B3B; */
+}
+.App {
+  text-align: center;
+}
+.homeBase{
+  margin: 0px;
+  padding: 10px;
+  border-bottom: 2px solid white;
+}
+.homeBase>p{
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  font-size: 200%;
+  color:#FC615D;
+}
+.homeContent{
+  margin: 4px 0px;
+  padding: 10px;
+  /* background-color: #FC615D; */
+  color: white;
+}
+.homeContent>h3{
+  font-size: 220%;
+  color: rgba(26, 235, 60, 0.836);
+  font-weight: bold;
+}
+.homeContent>p{
+  color: #2C2B3B;
+  font-size: 120%;
+  width: 70%;
+  margin: 8px auto
+}
+.homeContent>button,.loginBtn{
+  margin: 8px auto;
+  width: 20%;
+  padding: 14px;
+  font-family: 'Oswald';
+  font-size: 100%;
+  cursor: pointer;
+  transition: 0.7s;
+  background-color: #FC615D;
+}
+.homeContent>button:hover,.loginBtn:hover{
+  background-color: rgb(29, 27, 39);
+}
+.homeContent>.LoginButton{
+  background-color: rgba(26, 235, 60, 0.836);
+  display: block;
+}
+.homeContent>.LoginButton:hover{
+  background-color: 'rgb(29, 27, 39)';
+}
+.wallpaper{
+  width: 100%;
+  height: 300px;
+  margin: 0px;
+}
+.loginFromArea{
+  /* background-color: rgba(26, 235, 60, 0.836); */
+  padding: 20px;
+  width: 60%;
+  margin: 10px auto;
+  border-radius: 20px;
+}
+.loginFromArea>form{
+  width: 80%;
+}
+.loginFromArea input{
+  width: 90%;
+  padding: 20px;
+  background-color: rgba(26, 235, 60, 0.836);;
+  color: #2C2B3B;
+  font-size: 100%;
+  font-family: 'Poppins'
+}
+form>p{
+  margin: 0px;
+  padding: 0px;
+  font-size: 150%;
+}
+form>small{
+  margin: 20px auto;
+  text-align: left;
+}
+.loader{
+  color: rgb(29, 27, 39);
+  font-size: 90%;
+}
+.tabs{
+  text-align: center;
+  padding-top: 10px;
+}
+.tabs>p{
+  background-color: #FC615D;
+  margin: 8px;
+  padding: 10px;
+  width: 80%;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.7s;
+  margin: 5px auto;
+}
+.tabs>p:hover{
+  background-color: #2C2B3B;
+}
+.searchInput{
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+}
+.searchInput>input{
+  background-color: white;
+  border: 1px solid rgb(212, 210, 210);
+  width: 90%;
+  font-size: 100%;
+  text-align: center;
+  padding: 14px;
+  color: black;
+}
+.searchInput>input::placeholder{
+  color: rgb(212, 210, 210)
+}
+.searchInput>button{
+  width: 20%;
+  font-size: 100%;
+  background-color: rgba(26, 235, 60, 0.836);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.searchInput>button:hover{
+  background-color: #2C2B3B;
+}
+.sideNav{
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  border: 1px solid black;
+  margin: 0px;
+  top: 0;
+  left: 0;
+  background-color: #2C2B3B;
+  text-align: center;
+}
+.sideContent{
+  margin: 0px 0px 0px 30%;
+}
+.categories>*{
+  display: block;
+}
+.categoriesBtns{
+  margin: 8px auto;
+  width: 50%;
+  background-color: rgba(26, 235, 60, 0.836);
+  font-size: 100%;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.7s;
+  font-family: 'Poppins'
+}
+.categoriesBtns:hover{
+  background-color: #2C2B3B
+}
+.rests{
+  width: 80%;
+  display: flex;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.rests>div{
+  width: 30%;
+}
+.rests>div>p{
+  color: #FC615D;
+  border: 2px solid rgb(193, 193, 199);
+  border-right: none;
+  border-left: none;
+  font-size: 120%; 
+}
+.logoutBtn{
+  font-size: 100%;
+  font-family: 'Oswald';
+  color: white;
+  background-color: rgba(26, 235, 60, 0.836);
+  width: 60%;;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.logoutBtn:hover{
+  background-color: #2C2B3B;
+}
+@media only screen and (max-width: 1120px) {
+  .homeContent>button{
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .homeBase>p{
+    font-size: 160%;
+  }
+  .homeContent>h3{
+    font-size: 170%;
+  }
+  .homeContent>p{
+    font-size: 90%;
+    width: 90%;
+  }
+  .homeContent>button{
+    width: 80%;
+    font-size: 80%;
+    display: block;
+  }
+  .wallpaper{
+    height: 150px;
+  }
+  .loginFromArea{
+    width: 100%;
+    padding: 0px;
+  }
+  .loginFromArea>form{
+    width: 90%;
+  }
+  .loginFromArea input{
+    padding: 12px;
+    font-size: 80%;
+  }
+  .loginFromArea .loginBtn{
+    width: 50%;
+    font-size: 90%;
+  }
+}
